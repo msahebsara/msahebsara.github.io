@@ -1,60 +1,315 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
-		<title>Sahebsara.me | Mehrshad's Webpage</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<title> </title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body class="is-loading">
+	<body class="landing">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><a href="index.html">SAHEBSARA.ME</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Mehrshad Sahebsara</h1>
-							<p>Welcome to my web page. This is a web portfolio.
-								<br />
-								Content to come soon.</p>
-						</header>
+						<li>
+							<a href="" class="icon fa-angle-down">Course Content</a>
+							<ul>
 
+								<li>
+									<a href="">Computer Science 10</a>
+									<ul>
+										<li><a href="#">Coming soon!</a></li>
 
-						<footer>
-              <!--
-							<ul class="icons">
-								<li><a href="#" class="fa-twitter">Twitter</a></li>
-								<li><a href="#" class="fa-instagram">Instagram</a></li>
-								<li><a href="#" class="fa-facebook">Facebook</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="">Computer Science 20</a>
+									<ul>
+										<li><a href="#">Coming soon!</a></li>
+
+									</ul>
+								</li>
+
+								<li>
+									<a href="">Computer Science 30/31</a>
+									<ul>
+										<li><a href="#">Coming soon!</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="">FINMAN 10</a>
+									<ul>
+										<li><a href="#">FINMAN 1015</a></li>
+										<li><a href="#">FINMAN 1020</a></li>
+										<li><a href="#">FINMAN 1030</a></li>
+									</ul>
+								</li>
+
 							</ul>
-            -->
-						</footer>
-					</section>
+						</li>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>Copyright &copy; 2015 by Mehrshad Sahebsara</li>
-						</ul>
-					</footer>
+						<li>
+							<a href="" class="icon fa-angle-down">Personal Work</a>
+							<ul>
 
+								<li>
+									<a href="">Completed/Completing Projects</a>
+									<ul>
+										<li><a href="#">Virtolio</a></li>
+
+									</ul>
+								</li>
+
+								<li>
+									<a href="">Future Projects</a>
+									<ul>
+										<li><a href="#">Tervolio - Coming soon!</a></li>
+
+									</ul>
+								</li>
+
+							</ul>
+						</li>
+
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Mehrshad Sahebsara</h2>
+				<p>Welcome to my web portfolio.</p>
+				<ul class="actions">
+					<li><a href="#contact" class="button">Contact Me</a></li>
+				</ul>
+			</section>
+
+		<!-- One -->
+			<div class="wrapper style1">
+				<section class="container">
+					<header class="major">
+						<h2>What is this site?</h2>
+						<p>This site aims to do the following: </p>
+					</header>
+					<div class="row uniform">
+						<div class="4u">
+							<section class="box special">
+								<i class="icon major fa-user"></i>
+								<h3>Course Content</h3>
+								<p>This site aims to present my completed course content in various classes in an organized fashion.</p>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="box special">
+								<i class="icon major fa-tint"></i>
+								<h3>Digital Portfolio</h3>
+								<p>Beyond the ability to contact me, hopefully you will find out more about me.</p>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="box special">
+								<i class="icon major fa-cog"></i>
+								<h3>Personal / Future Content </h3>
+								<p>Follow some cool projects i'm engaging in at home, or see what I plan to do next.</p>
+							</section>
+						</div>
+					</div>
+				</section>
 			</div>
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+		<!-- Two -->
+<!--
+
+			<div class="wrapper style2">
+				<section class="container 75%">
+					<header class="major">
+						<h2>Consectetuer Adipis</h2>
+						<p>Aliquet ante lobortis non semper gravida. Accumsan faucibus praesent ante aliquet amet posuere ac cubilia. Eu faucibus mi neque adipiscing mi lorem. Semper blandit. Amet adipiscing interdum.</p>
+					</header>
+					<div class="row uniform">
+						<div class="6u">
+							<section class="box special">
+								<i class="icon major alt fa-bar-chart"></i>
+								<h3>Ipsum Feugiat</h3>
+								<p>Aliquet ante lobortis semper gravida. quet amet posuere ac cubilia. Eu faucibus mi neque adipiscing mi lorem ipsum dolor sit amet nullam.
+								Amet semper interdum nunc aliquam lobortis id lobortis.</p>
+							</section>
+						</div>
+						<div class="6u">
+							<section class="box special">
+								<i class="icon major alt fa-cog"></i>
+								<h3>Lorem Tempus</h3>
+								<p>Aliquet ante lobortis semper gravida. quet amet posuere ac cubilia. Eu faucibus mi neque adipiscing mi lorem ipsum dolor sit amet nullam.
+								Amet semper interdum nunc aliquam lobortis id lobortis.</p>
+							</section>
+						</div>
+					</div>
+					<div class="row uniform">
+						<div class="6u">
+							<section class="box special">
+								<i class="icon major alt fa-desktop"></i>
+								<h3>Gravida Adipiscing</h3>
+								<p>Aliquet ante lobortis semper gravida. quet amet posuere ac cubilia. Eu faucibus mi neque adipiscing mi lorem ipsum dolor sit amet nullam.
+								Amet semper interdum nunc aliquam lobortis id lobortis.</p>
+							</section>
+						</div>
+						<div class="6u">
+							<section class="box special">
+								<i class="icon major alt fa-check"></i>
+								<h3>Ligula Magna</h3>
+								<p>Aliquet ante lobortis semper gravida. quet amet posuere ac cubilia. Eu faucibus mi neque adipiscing mi lorem ipsum dolor sit amet nullam.
+								Amet semper interdum nunc aliquam lobortis id lobortis.</p>
+							</section>
+						</div>
+					</div>
+				</section>
+			</div>
+-->
+		<!-- Three -->
+<!--
+			<div class="wrapper style3">
+				<section class="container">
+					<header class="major">
+						<h2>Sed Faucibus</h2>
+					</header>
+					<div class="row">
+						<div class="4u">
+							<section class="special">
+								<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+								<h3>Etiam Interdum</h3>
+								<p>Praesent dapibus, neque id cursus tortor magna etiam lorem
+								neque egestas sed magna tempus.</p>
+								<ul class="actions">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special">
+								<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+								<h3>Varius Faucibus</h3>
+								<p>Praesent dapibus, neque id cursus tortor magna etiam lorem
+								neque egestas sed magna tempus.</p>
+								<ul class="actions">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special">
+								<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+								<h3>Ante Praesent</h3>
+								<p>Praesent dapibus, neque id cursus tortor magna etiam lorem
+								neque egestas sed magna tempus.</p>
+								<ul class="actions">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</section>
+			</div>
+-->
+		<!-- Four -->
+			<div class="wrapper style1">
+				<section class="container 75%">
+					<header class="major">
+						<h2>Contact</h2>
+						<p>Should you wish to contact me, please use the conact details below.</p>
+					</header>
+					<div id="contact" class="box">
+						<div class="row uniform">
+							<div class="12u">
+								<p>Email: msahebsara at live.ca</p>
+								<!--
+								<form method="post" action="#">
+									<div class="row uniform 50%">
+										<div class="12u">
+											<input type="text" name="name" id="name" placeholder="Your Name" />
+										</div>
+									</div>
+									<div class="row uniform 50%">
+										<div class="12u">
+											<input type="email" name="email" id="email" placeholder="Your Email" />
+										</div>
+									</div>
+									<div class="row uniform 50%">
+										<div class="12u">
+											<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+										</div>
+									</div>
+									<div class="row uniform 50%">
+										<div class="12u">
+											<ul class="actions">
+												<li><input type="submit" value="Send" /></li>
+												<li><input type="reset" class="alt" value="Reset" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							-->
+							</div>
+							<!--<div class="5u">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-map-marker"><span class="label">Address</span></h3>
+										Untitled Corporation<br />
+										1234 Somewhere Rd. Suite 5432<br />
+										Nashville, TN 00000-0000
+									</li>
+									<li>
+										<h3 class="icon fa-phone"><span class="label">Phone</span></h3>
+										(000) 000-0000 x1234
+									</li>
+									<li>
+										<h3 class="icon fa-envelope"><span class="label">Email</span></h3>
+										<a href="#">information@untitled.tld</a>
+									</li>
+									<li>
+										<h3 class="icon fa-twitter"><span class="label">Twitter</span></h3>
+										<a href="#">twitter.com/untitled-tld</a>
+									</li>
+									<li>
+										<h3 class="icon fa-facebook"><span class="label">Facebook</span></h3>
+										<a href="#">facebook.com/untitled-tld</a>
+									</li>
+									<li>
+										<h3 class="icon fa-linkedin"><span class="label">LinkedIn</span></h3>
+										<a href="#">linkedin.com/untitled-tld</a>
+									</li>
+								</ul>
+							</div>
+						-->
+						</div>
+					</div>
+				</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					Copyright &copy; 2015 by Mehrshad Sahebsara
+				</div>
+			</footer>
 
 	</body>
 </html>
