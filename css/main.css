@@ -22,6 +22,16 @@ html, body {
   font-size: 100%;
 }
 
+.img-circle {
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
+    float: right;
+
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
