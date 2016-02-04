@@ -1,37 +1,10 @@
-========================
+Hey there!
 
-Gumba Website Template
+This is a personal portfolio style webpage, sahebsara.me
 
-0.1.0
+It is currently under construction.
 
-========================
-
-Author
-Rick Waalders
-
-Twitter
-http://twitter.com/rickwaalders
-
-Website
-http://www.pixelsbyrick.com
-
-========================
-
-Help
-
-- If you want to enable the navigation, uncomment and change the <nav> element inside index.html
-- There's a placeholder for Google Analytics. If you have a GA account, just paste your tracking ID at 'YOUR_GOOGLE_ANALYTICS_ID'.
-
-========================
-
-License
-
-- Please refer to the LICENSE.md file
-
-========================
-
-This projects uses open-source components:
-
+Featuring these components:
 jQuery - http://jquery.com/
 Fluidbox - http://terrymun.github.io/Fluidbox/
 Bourbon - http://bourbon.io/
