@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+	Axiom by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Mehrshad - Projects - Virtolio</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="left-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+				<div class="container">
+
+					<!-- Logo -->
+						<div id="logo">
+							<div>
+								<h1><a href="#">Mehrshad Sahebsara</a></h1>
+								<span>Personal webpage / directory.</span>
+							</div>
+						</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li class="current_page_item">
+										<span>Projects</span>
+										<ul>
+											<!--
+											<li><a href="#">Arduino Garage Opener</a></li>
+										-->
+											<li><a href="projects_virtolio.html">Virtolio - Stock Market Simualtor</a></li>
+										</ul>
+									</li>
+									<li><a href="https://github.com/msahebsara">GitHub</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main" class="container">
+
+				<div class="row double">
+
+					<!-- Sidebar -->
+						<div id="sidebar" class="4u">
+
+							<section>
+								<header>
+									<h2>Virtolio</h2>
+								</header>
+								<p>A market simualtor using virtual money and real market data. Built for educational usage.</p>
+								<br>
+								<p><i>*Snippets of source code can be seen within the documents. Please contact me should you wish to view the entire source code</i></p>
+							</section>
+
+							<section>
+								<header>
+									<h2>Downloads</h2>
+								</header>
+								<ul class="default">
+									<li><a href="projects/virtolio/writeup.pdf">Write-Up</a></li>
+									<li><a href="projects/virtolio/development.pdf">Development Documentation</a></li>
+									<li><a href="projects/virtolio/screenshot1.png">Screenshot 1 - Homepage</a></li>
+									<li><a href="projects/virtolio/screenshot2.png">Screenshot 2 - Portoflios Empty</a></li>
+									<li><a href="projects/virtolio/screenshot3.png">Screenshot 3 - Create Portfolio</a></li>
+									<li><a href="projects/virtolio/screenshot4.png">Screenshot 4 - Stock Page</a></li>
+									<li><a href="projects/virtolio/screenshot5.png">Screenshot 5 - Portfolios Populated</a></li>
+
+								</ul>
+							</section>
+
+							<section>
+								<header>
+									<h2>Tools Used</h2>
+								</header>
+								<ul class="default">
+									<li><a href="https://laravel.com/docs/5.2">Laravel</a></li>
+									<li><a href="https://laravel.com/docs/5.1/eloquent">Eloquent</a></li>
+									<li><a href="http://getbootstrap.com/getting-­started/">Bootstrap 3col</a></li>
+									<li><a href="https://api.jquery.com/">jQuery</a></li>
+									<li><a href="https://www.vagrantup.com/docs/">Vagrant</a></li>
+									<li><a href="https://getcomposer.org/doc/">Composer</a></li>
+								</ul>
+							</section>
+						</div>
+
+					<!-- Content -->
+						<div id="content" class="8u skel-cell-important">
+							<article>
+								<header>
+									<h2>Virtolio</h2>
+									<span class="byline">Your free virtual portfolio.</span>
+								</header>
+								<h3>Background</h3>
+								<p>
+									I (and likely many my age) have wanted to explore the world of finance, yet have no effective means of going about learning and simulating items such as the stock market.
+									While current stock simulators exist (such as MarketWatch Stock Simulator), they either are extremely buggy and outdated, have a poor user interface, only work if you are with the bank, only work if you are over eighteen, and/or are too complex for a beginner to understand.
+									Thus, a solution must therefore come about which not only lets a client learn about and then practice the financial world, but be able to keep track of progress and even challenge others progress as well. It makes logical sense to have this application be web­based, allowing clients or users to use the application from a multitude of devices, as well as have information be stored in an online database. As the program is web­based, the client must therefore be connected to the internet, ensuring items such as stock prices are always accurate and up to date.
+									Further, a web­based application makes it easier for clients to interact with one another, through the means of a web browser.
+								</p>
+								<p>
+									In order to craft this application, many tools have been used (as outlined in the sidebar). Laravel provides the core back-end framework, and ensures an elegant methodology to separate models, views and controllers. The Eloquent package (from Laravel) is used to interact with the MySQL database. The database itself does not contain live financial information. Rather, it is used to store data about the user (e.g. username and encrypted password) as well as information about the user's portfolios and stock details such as quantity and symbol. The live financial data is grabbed via an API (licensed for educational use) through the use of jQuery. The results are then displayed to the user. Should the user wish to purchase/sell an item, the latest price is used and stored in the database. When viewing a portfolio, this information is used to calculate the net profit/loss. The current price is fetched again via the API, while the previous price is grabbed from the database. These are then locally stored to be arithmetically manipulated to yield percentage profit.
+
+								</p>
+								<p>
+									For the interface, an administrative Bootstrap 3 template was used. This provides a grid structure to work with that makes it much easier to build responsive, modular design elements. As well, the template provides classes to easily construct modal windows, which have been used in Virtolio as dialogs for buying, selling and creating.
+								</p>
+								<p>
+									After the development stage was complete, Virtolio was deployed to a local server. This server was set up using the help of VirtualBox, Vagrant and Homestead. Through editing the ‘hosts’ file and the ‘Homestead.yaml’ file, it was possible to route a custom URL (e.g. virtolio.dev:8000) to the localhost (127.0.0.1) on a specific port (8000) which called the virtual machine to respond with the website.
+								</p>
+								<h3>Future Considerations</h3>
+								<p>
+									Virtolio, as of now, has not been deployed for public use. The API being used is licensed strictly for experimental and educational usage.
+
+								</p>
+								<p>
+									One improvement would be to extend the usage of jQuery and the front-end, in order to maximize the efficiency of the site and offload some of the work the server must perform.
+
+								</p>
+								<p>
+									Another improvement would be to implement a backup API, in case the first API is down. As Virtolio relies on external resources for financial data, it is impossible to control the stability of these mediums. As such, backup options would ensure the site is available to use for the maximum time possible.
+
+								</p>
+
+								<h3>Summary</h3>
+								<p>
+									Virtolio is a tool to help educators and students simulate the stock market and create multiple virtual portfolios. An array of tools such as the Laravel framework have been used to create Virtolio.
+								</p>
+								<p>
+									Through the development of Virtolio, I have learned a vast amount regarding the use of APIs, the Laravel framework, jQuery, and other web technologies.
+								</p>
+							</article>
+						</div>
+
+				</div>
+
+			</div>
+
+
+		<!-- Footer -->
+			<div id="footer" class="container">
+
+				<div class="row">
+					<div class="12u">
+						<span class="copyright">Copyright &copy; 2016 by Mehrshad Sahebsara</span>
+						<ul class="icons">
+							<li><a href="https://github.com/msahebsara" class="icon fa-github"><span>GitHub</span></a></li>
+						</ul>
+
+					</div>
+				</div>
+
+			</div>
+
+	</body>
+</html>
